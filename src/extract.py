@@ -1,13 +1,16 @@
-from dotenv import load_dotenv
 import os
 import requests
-import pprint
 
-load_dotenv()
 
-api_key = os.getenv('API_KEY')
+def extract_flights():
 
-url = "https://opensky-network.org/api/states/all"
+    url = "https://opensky-network.org/api/states/all"
 
-response = requests.get(url)
-data = response.json()
+    response = requests.get(url)
+
+    if response.status_code != 200:
+        raise Exception(
+            f"API Error: {response.status_code}"
+        )
+
+    return response.json()
