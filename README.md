@@ -12,6 +12,7 @@ The pipeline performs three main steps:
 
 ## Project Structure
 
+```text
 flight-tracker/
 ├── dags/
 │   └── flights_dag.py
@@ -26,6 +27,7 @@ flight-tracker/
 │   └── schema.sql
 ├── requirements.txt
 └── README.md
+```
 
 ## Data Source
 
