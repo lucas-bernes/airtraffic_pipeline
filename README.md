@@ -14,8 +14,6 @@ The pipeline performs three main steps:
 
 ```text
 flight-tracker/
-├── dags/
-│   └── flights_dag.py
 ├── src/
 │   ├── extract.py
 │   ├── transform.py
@@ -23,7 +21,7 @@ flight-tracker/
 │   ├── database.py
 │   ├── db_init.py
 │   └── main.py
-├── sql/
+├── database/
 │   └── schema.sql
 ├── requirements.txt
 └── README.md
